@@ -5,3 +5,5 @@ if [[ $(/usr/bin/id -u) -ne 0 ]]; then
 	exit
 fi
 
+#install openssh
+pacman -Syu --noconfirm openssh
