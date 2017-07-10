@@ -20,3 +20,6 @@ pacman -Syu --noconfirm python-pip
 #install jq
 pacman -Syu --noconfirm jq
 
+#install cmake
+pacman -Syu --noconfirm cmake
+
