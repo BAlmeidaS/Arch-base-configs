@@ -46,3 +46,6 @@ pacman -Syu --noconfirm tig
 #install ack
 pacman -Syu --noconfirm ack
 
+#install gcc5
+pacman -Syu --noconfirm gcc5
+
