@@ -36,3 +36,6 @@ pacman -Syu --noconfirm terraform
 
 #install openssl
 pacman -Syu --noconfirm openssl-1.0
+
+#install wget
+pacman -Syu --noconfirm wget
