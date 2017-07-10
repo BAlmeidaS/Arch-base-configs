@@ -7,3 +7,6 @@ fi
 
 #install openssh
 pacman -Syu --noconfirm openssh
+
+#install terminator
+pacman -Syu --noconfirm terminator
