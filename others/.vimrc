@@ -53,3 +53,6 @@ filetype plugin indent on    " required
 "set colorscheme
 colorscheme gruvbox
 set background=dark
+
+"setting params to autocomplete
+let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
