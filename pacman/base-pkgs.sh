@@ -39,3 +39,7 @@ pacman -Syu --noconfirm openssl-1.0
 
 #install wget
 pacman -Syu --noconfirm wget
+
+#install tig
+pacman -Syu --noconfirm tig
+
