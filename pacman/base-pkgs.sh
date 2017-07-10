@@ -23,3 +23,7 @@ pacman -Syu --noconfirm jq
 #install cmake
 pacman -Syu --noconfirm cmake
 
+#install docker
+pacman -Syu --noconfirm docker
+systemctl enable docker.service
+sudo gpasswd -a $USER docker
