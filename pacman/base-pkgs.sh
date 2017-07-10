@@ -13,3 +13,7 @@ pacman -Syu --noconfirm terminator
 
 #install zsh
 pacman -Syu --noconfirm zsh
+
+#install python-pip
+pacman -Syu --noconfirm python-pip
+
