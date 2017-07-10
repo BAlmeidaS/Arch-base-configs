@@ -86,3 +86,7 @@ source $ZSH/oh-my-zsh.sh
 
 #pip path
 export PATH=~/.local/bin:$PATH
+
+#virtualenv and virtualenvwrapper
+export WORKON_HOME=~/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh

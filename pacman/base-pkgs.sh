@@ -49,3 +49,5 @@ pacman -Syu --noconfirm ack
 #install gcc5
 pacman -Syu --noconfirm gcc5
 
+#install virtualenvwrapper
+pacman -Syu --noconfirm --force python-virtualenvwrapper
