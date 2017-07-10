@@ -30,3 +30,7 @@ sudo gpasswd -a $USER docker
 
 #install docker-compose
 pacman -Syu --noconfirm docker-compose
+
+#install terraform
+pacman -Syu --noconfirm terraform
+
