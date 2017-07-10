@@ -43,3 +43,6 @@ pacman -Syu --noconfirm wget
 #install tig
 pacman -Syu --noconfirm tig
 
+#install ack
+pacman -Syu --noconfirm ack
+
