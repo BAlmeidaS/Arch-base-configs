@@ -27,3 +27,6 @@ pacman -Syu --noconfirm cmake
 pacman -Syu --noconfirm docker
 systemctl enable docker.service
 sudo gpasswd -a $USER docker
+
+#install docker-compose
+pacman -Syu --noconfirm docker-compose
