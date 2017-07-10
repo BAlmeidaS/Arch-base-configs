@@ -10,3 +10,6 @@ pacman -Syu --noconfirm openssh
 
 #install terminator
 pacman -Syu --noconfirm terminator
+
+#install zsh
+pacman -Syu --noconfirm zsh
