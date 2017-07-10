@@ -35,4 +35,4 @@ pacman -Syu --noconfirm docker-compose
 pacman -Syu --noconfirm terraform
 
 #install openssl
-pacman -Syu --noconfirmi openssl-1.0
+pacman -Syu --noconfirm openssl-1.0
