@@ -17,3 +17,6 @@ pacman -Syu --noconfirm zsh
 #install python-pip
 pacman -Syu --noconfirm python-pip
 
+#install jq
+pacman -Syu --noconfirm jq
+
