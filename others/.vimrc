@@ -17,6 +17,9 @@ let NERDTreeShowHidden=1
 "Open on start
 autocmd VimEnter * NERDTree
 
+""" HIGHLIGHT SEARCH PATTERN """
+:set hlsearch
+
 """""""""""""""""""""""""""""
 """""""""" VUNDLES """"""""""
 """""""""""""""""""""""""""""
