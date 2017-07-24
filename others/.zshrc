@@ -90,3 +90,10 @@ export PATH=~/.local/bin:$PATH
 #virtualenv and virtualenvwrapper
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
+
+#rbenv path
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
+
+#Terraform aws region
+export AWS_REGION=us-east-1

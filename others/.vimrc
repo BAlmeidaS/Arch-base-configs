@@ -16,6 +16,8 @@ syntax on
 let NERDTreeShowHidden=1
 "Open on start
 autocmd VimEnter * NERDTree
+"Move cursor to the file opened
+autocmd VimEnter * wincmd p
 
 """ HIGHLIGHT SEARCH PATTERN """
 :set hlsearch
@@ -59,3 +61,10 @@ set background=dark
 
 "setting params to autocomplete
 let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
+"line numbers
+:set number
+
+"tab size
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+
