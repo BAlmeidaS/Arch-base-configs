@@ -51,3 +51,6 @@ pacman -Syu --noconfirm gcc5
 
 #install virtualenvwrapper
 pacman -Syu --noconfirm --force python-virtualenvwrapper
+
+#install chromium
+pacman -Syu --noconfirm --force chromium
