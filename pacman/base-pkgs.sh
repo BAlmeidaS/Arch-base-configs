@@ -60,3 +60,6 @@ pacman -Syu --noconfirm --force chromium
 
 #install gimp
 pacman -Sy --noconfirm --force gimp
+
+#install xclip
+pacman -Sy --noconfirm --force xclip
