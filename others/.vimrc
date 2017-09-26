@@ -18,6 +18,8 @@ let NERDTreeShowHidden=1
 autocmd VimEnter * NERDTree
 "Move cursor to the file opened
 autocmd VimEnter * wincmd p
+"ignoring pyc, swp files
+let NERDTreeIgnore = ['\.pyc$', '\.swp$']
 
 """ HIGHLIGHT SEARCH PATTERN """
 :set hlsearch
