@@ -58,5 +58,5 @@ pacman -Syu --noconfirm --force tree
 #install chromium
 pacman -Syu --noconfirm --force chromium
 
-#install pacman
+#install gimp
 pacman -Sy --noconfirm --force gimp
