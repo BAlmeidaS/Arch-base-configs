@@ -97,3 +97,6 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 
 #Terraform aws region
 export AWS_REGION=us-east-1
+
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+export GOROOT_BOOTSTRAP=$HOME/.gvm/gos/go1.4
