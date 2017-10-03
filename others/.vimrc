@@ -73,3 +73,8 @@ let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/
 "tab size
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
+"autocompleteme
+"fechando os buffers auxiliares automaticamente
+"https://vi.stackexchange.com/questions/4056/is-there-an-easy-way-to-close-a-scratch-buffer-preview-window
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
