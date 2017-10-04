@@ -11,6 +11,10 @@ call vundle#begin()
 filetype plugin on
 syntax on
 
+""""" find the selection """""
+"" http://vim.wikia.com/wiki/Search_for_visually_selected_text ""
+vnoremap // y/<C-R>"<CR>
+
 """""""" NEERDTREE """"""""
 "Show Hidden Files
 let NERDTreeShowHidden=1
@@ -78,3 +82,7 @@ set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 "https://vi.stackexchange.com/questions/4056/is-there-an-easy-way-to-close-a-scratch-buffer-preview-window
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
+
+"NERDTree ignore
+let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.swp$']

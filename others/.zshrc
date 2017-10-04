@@ -100,3 +100,17 @@ export AWS_REGION=us-east-1
 
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 export GOROOT_BOOTSTRAP=$HOME/.gvm/gos/go1.4
+
+#gopath
+#export PATH=$PATH:$(go env GOPATH)/bin
+#export GOPATH=$(go env GOPATH)
+
+#keys gn
+export BUNDLE_GITHUB__COM=2c8e6f7c0934d3bd8a884b276a0e776101c0ff3e:x-oauth-basic
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /home/bruno/getninjas/aws-scripts/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/bruno/getninjas/aws-scripts/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /home/bruno/getninjas/aws-scripts/node_modules/tabtab/.completions/sls.zsh ]] && . /home/bruno/getninjas/aws-scripts/node_modules/tabtab/.completions/sls.zsh
