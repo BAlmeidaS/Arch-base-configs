@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo "$(whoami)"
+
+[ "$UID" -eq 0 ] || exec sudo "$0" "$@"
+
+
 if [[ $(/usr/bin/id -u) -ne 0 ]]; then
 	echo "Not running as root! =["
 	exit
