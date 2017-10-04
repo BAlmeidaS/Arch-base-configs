@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASEPATH=`pwd`
+BASEPATH=$(cd $(dirname $BASH_SOURCE) && pwd )
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -16,4 +16,4 @@ then
 	exit
 fi
 
-ln -s $BASEPATH/.zshrc $HOME/
+ln -sf $BASEPATH/.zshrc $HOME/

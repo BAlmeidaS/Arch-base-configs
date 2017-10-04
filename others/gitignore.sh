@@ -1,7 +1,8 @@
 #!/bin/bash
 
-rm -f $HOME/.gitignore
-ln -s `pwd`/.gitignore $HOME/
+BASEPATH=$(cd $(dirname $BASH_SOURCE) && pwd )
+
+ln -sf $BASEPATH/.gitignore $HOME/
 
 git config --global core.excludesfile $HOME/.gitignore
 
