@@ -56,6 +56,12 @@ Plugin 'Valloric/YouCompleteMe'
 "vimgo - https://github.com/fatih/vim-go
 Plugin 'fatih/vim-go'
 
+"vim-python-pep9-ident
+Plugin 'Vimjas/vim-python-pep8-indent'
+
+"python-mode/python-mode
+Plugin 'python-mode/python-mode'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -86,3 +92,6 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 "NERDTree ignore
 let NERDTreeIgnore = ['\.pyc$']
 let NERDTreeIgnore = ['\.swp$']
+
+"Pytohn-mode - python 3 syntax
+let g:pymode_python = 'python3'

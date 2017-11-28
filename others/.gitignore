@@ -3,3 +3,12 @@
 .ruby-version
 *.vim
 path/
+
+# pymode
+.ropeproject
+
+#ds template
+/infra/env
+
+#infra role
+.temp_credentials
