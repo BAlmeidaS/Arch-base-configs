@@ -95,3 +95,11 @@ let NERDTreeIgnore = ['\.swp$']
 
 "Pytohn-mode - python 3 syntax
 let g:pymode_python = 'python3'
+
+"xclip on F7
+"map <F7> :w !xclip -sel c<CR><CR>
+"vmap <F7> "*y
+"map <S-F7> :r!xclip -sel c<CR>
+
+"update zshrc
+let $BASH_ENV = "~/.bash_aliases"
