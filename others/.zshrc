@@ -114,3 +114,12 @@ export BUNDLE_GITHUB__COM=2c8e6f7c0934d3bd8a884b276a0e776101c0ff3e:x-oauth-basic
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /home/bruno/getninjas/aws-scripts/node_modules/tabtab/.completions/sls.zsh ]] && . /home/bruno/getninjas/aws-scripts/node_modules/tabtab/.completions/sls.zsh
+
+#alias for xclip
+alias xc='xclip -sel clip'
+
+export ASSUME_ROLE="arn:aws:iam::590284024382:role/iam-devops-access-production-role"
+export TF_VAR_role_arn=$ASSUME_ROLE
+
+#adding auxilir file
+[[ -f ~/.zshrc_aux ]] && . ~/.zshrc_aux
