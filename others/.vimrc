@@ -91,7 +91,7 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 
 "NERDTree ignore
 let NERDTreeIgnore = ['\.pyc$']
-let NERDTreeIgnore = ['\.swp$']
+let NERDTreeIgnore = ['\.sw[^\.]*']
 
 "Pytohn-mode - python 3 syntax
 let g:pymode_python = 'python3'

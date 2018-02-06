@@ -1,5 +1,4 @@
-*.swp
-*.swo
+*.sw[^\.]*
 .ruby-version
 *.vim
 path/
@@ -12,3 +11,6 @@ path/
 
 #infra role
 .temp_credentials
+
+#backups
+*.backup
