@@ -84,6 +84,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+#Bash scripts
+export PATH=$HOME/bash-for-your-own-good
+
 #pip path
 export PATH=~/.local/bin:$PATH
 
