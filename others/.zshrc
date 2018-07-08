@@ -85,17 +85,19 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #Bash scripts
-export PATH=$HOME/bash-for-your-own-good
+export PATH=$HOME/bash-for-your-own-good:$PATH
 
 #pip path
 export PATH=~/.local/bin:$PATH
+export PATH=$HOME/Library/Python/3.7/bin:$PATH
 
 #virtualenv and virtualenvwrapper
 export WORKON_HOME=~/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+source $HOME/Library/Python/3.7/bin/virtualenvwrapper.sh
 
 #rbenv path
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/bin":$PATH
 export PATH="$HOME/.rbenv/shims:$PATH"
 
 #Terraform aws region
