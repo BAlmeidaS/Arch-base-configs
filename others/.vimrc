@@ -23,7 +23,7 @@ autocmd VimEnter * NERDTree
 "Move cursor to the file opened
 autocmd VimEnter * wincmd p
 "ignoring pyc, swp files
-let NERDTreeIgnore = ['\.pyc$', '\.swp$']
+let NERDTreeIgnore = ['\.pyc$', '\.sw[^\.]*', '\.git$[[dir]]']
 
 """ HIGHLIGHT SEARCH PATTERN """
 :set hlsearch
@@ -88,10 +88,6 @@ set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 "https://vi.stackexchange.com/questions/4056/is-there-an-easy-way-to-close-a-scratch-buffer-preview-window
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
-
-"NERDTree ignore
-let NERDTreeIgnore = ['\.pyc$']
-let NERDTreeIgnore = ['\.sw[^\.]*']
 
 "Pytohn-mode - python 3 syntax
 let g:pymode_python = 'python3'
