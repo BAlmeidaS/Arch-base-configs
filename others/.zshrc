@@ -128,3 +128,21 @@ export TF_VAR_role_arn=$ASSUME_ROLE
 
 #adding auxilir file
 [[ -f ~/.zshrc_aux ]] && . ~/.zshrc_aux
+
+#tfenv
+export PATH="$HOME/.tfenv/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/bruno/.google-cloud-sdk/path.zsh.inc' ]; then . '/home/bruno/.google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/bruno/.google-cloud-sdk/completion.zsh.inc' ]; then . '/home/bruno/.google-cloud-sdk/completion.zsh.inc'; fi
+
+#terraform gcloud credetials
+export GOOGLE_CREDENTIALS='/home/bruno/projetos/luizalabs/maga-bigdata-8054a973e6cd.json'
+
+#terraform alias
+alias tf='terraform'
+
+#alias nautilus
+alias files='nautilus'
