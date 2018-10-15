@@ -23,7 +23,7 @@ autocmd VimEnter * NERDTree
 "Move cursor to the file opened
 autocmd VimEnter * wincmd p
 "ignoring pyc, swp files
-let NERDTreeIgnore = ['\.pyc$', '\.sw[^\.]*', '\.git$[[dir]]']
+let NERDTreeIgnore = ['\.pyc$', '\.sw[^\.]*', '\.git$[[dir]]', '.ipynb_checkpoints$[[dir]]' ]
 
 """ HIGHLIGHT SEARCH PATTERN """
 :set hlsearch
