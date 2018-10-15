@@ -146,3 +146,7 @@ alias tf='terraform'
 
 #alias nautilus
 alias files='nautilus'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/bruno/.sdkman"
+[[ -s "/home/bruno/.sdkman/bin/sdkman-init.sh" ]] && source "/home/bruno/.sdkman/bin/sdkman-init.sh"
