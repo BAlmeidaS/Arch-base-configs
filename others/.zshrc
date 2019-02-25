@@ -93,8 +93,8 @@ export PATH=$HOME/Library/Python/3.7/bin:$PATH
 
 #virtualenv and virtualenvwrapper
 export WORKON_HOME=~/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-source $HOME/Library/Python/3.7/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source $HOME/.local/bin/virtualenvwrapper.sh
 
 #rbenv path
 export PATH="$HOME/.rbenv/bin":$PATH
@@ -139,7 +139,8 @@ if [ -f '/home/bruno/.google-cloud-sdk/path.zsh.inc' ]; then . '/home/bruno/.goo
 if [ -f '/home/bruno/.google-cloud-sdk/completion.zsh.inc' ]; then . '/home/bruno/.google-cloud-sdk/completion.zsh.inc'; fi
 
 #terraform gcloud credetials
-export GOOGLE_CREDENTIALS='/home/bruno/projetos/luizalabs/maga-bigdata-8054a973e6cd.json'
+#export GOOGLE_CREDENTIALS='/home/bruno/projetos/luizalabs/maga-bigdata-8054a973e6cd.json'
+export GOOGLE_CREDENTIALS='$HOME/.config/gcloud/application_default_credentials.json'
 
 #terraform alias
 alias tf='terraform'
@@ -147,6 +148,31 @@ alias tf='terraform'
 #alias nautilus
 alias files='nautilus'
 
+#alias teresa configs
+alias old-production='teresa config use-cluster gcp-production'
+alias old-staging='teresa config use-cluster gcp-staging'
+alias production='teresa config use-cluster regional-production'
+alias staging='teresa config use-cluster regional-staging'
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/bruno/.sdkman"
 [[ -s "/home/bruno/.sdkman/bin/sdkman-init.sh" ]] && source "/home/bruno/.sdkman/bin/sdkman-init.sh"
+
+#airflow
+export AIRFLOW_HOME=$HOME/.airflow-local
+
+#logs Airflow
+log () {
+  rm -rf delete
+  mkdir delete
+  cd delete
+  gsutil cp -r $(echo $(expr $1 : '^\(.*\)\/driveroutput$')) .
+  cd $(ls)
+  echo "\n#######################################################"
+  echo "######################### LOG #########################"
+  echo "#######################################################\n"
+ # cat driveroutput.000000000
+ # cd ../..
+ # rm -rf delete
+}
+

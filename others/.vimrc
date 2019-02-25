@@ -23,7 +23,9 @@ autocmd VimEnter * NERDTree
 "Move cursor to the file opened
 autocmd VimEnter * wincmd p
 "ignoring pyc, swp files
-let NERDTreeIgnore = ['\.pyc$', '\.sw[^\.]*', '\.git$[[dir]]', '.ipynb_checkpoints$[[dir]]' ]
+let NERDTreeIgnore = ['\.pyc$', '\.sw[^\.]*', '\.git$[[dir]]', '.ipynb_checkpoints$[[dir]]', '__pycache__[[dir]]' ]
+"size
+let g:NERDTreeWinSize=60
 
 """ HIGHLIGHT SEARCH PATTERN """
 :set hlsearch
@@ -62,6 +64,9 @@ Plugin 'Vimjas/vim-python-pep8-indent'
 "python-mode/python-mode
 Plugin 'python-mode/python-mode'
 
+"docker-syntax
+Plugin 'ekalinin/Dockerfile.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -99,3 +104,9 @@ let g:pymode_python = 'python3'
 
 "update zshrc
 let $BASH_ENV = "~/.bash_aliases"
+
+let g:pymode_lint_ignore = ["E501"]
+
+"fold by indent:
+setlocal foldmethod=indent
+
