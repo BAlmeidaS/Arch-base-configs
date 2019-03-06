@@ -99,3 +99,6 @@ let g:pymode_python = 'python3'
 
 "update zshrc
 let $BASH_ENV = "~/.bash_aliases"
+
+"adding hotkey to explore
+map <F2> :Explore<CR>

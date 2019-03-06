@@ -94,7 +94,7 @@ export PATH=$HOME/Library/Python/3.7/bin:$PATH
 #virtualenv and virtualenvwrapper
 export WORKON_HOME=~/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-source $HOME/Library/Python/3.7/bin/virtualenvwrapper.sh
+#source $HOME/Library/Python/3.7/bin/virtualenvwrapper.sh
 
 #rbenv path
 export PATH="$HOME/.rbenv/bin":$PATH
@@ -146,3 +146,7 @@ alias tf='terraform'
 
 #alias nautilus
 alias files='nautilus'
+
+[[ -s "/home/bruno/.gvm/scripts/gvm" ]] && source "/home/bruno/.gvm/scripts/gvm"
+
+alias -g 'serveralias=serveralias -t zsh'
