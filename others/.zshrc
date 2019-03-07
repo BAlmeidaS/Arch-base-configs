@@ -181,3 +181,5 @@ log () {
 [[ -s "/home/bruno/.gvm/scripts/gvm" ]] && source "/home/bruno/.gvm/scripts/gvm"
 
 alias -g 'serveralias=serveralias -t zsh'
+alias alt='update-alternatives'
+
