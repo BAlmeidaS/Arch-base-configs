@@ -110,3 +110,6 @@ let g:pymode_lint_ignore = ["E501"]
 "fold by indent:
 setlocal foldmethod=indent
 
+"adding hotkey to explore
+map <F2> :Explore<CR>
+

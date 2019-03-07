@@ -95,6 +95,8 @@ export PATH=$HOME/Library/Python/3.7/bin:$PATH
 export WORKON_HOME=~/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source $HOME/.local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+#source $HOME/Library/Python/3.7/bin/virtualenvwrapper.sh
 
 #rbenv path
 export PATH="$HOME/.rbenv/bin":$PATH
@@ -176,3 +178,6 @@ log () {
  # rm -rf delete
 }
 
+[[ -s "/home/bruno/.gvm/scripts/gvm" ]] && source "/home/bruno/.gvm/scripts/gvm"
+
+alias -g 'serveralias=serveralias -t zsh'
