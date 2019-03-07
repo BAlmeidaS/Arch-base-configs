@@ -183,3 +183,4 @@ log () {
 alias -g 'serveralias=serveralias -t zsh'
 alias alt='update-alternatives'
 
+alias haro='haroopad'
