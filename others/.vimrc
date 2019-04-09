@@ -113,3 +113,5 @@ setlocal foldmethod=indent
 "adding hotkey to explore
 map <F2> :Explore<CR>
 
+"debugger python on macro -> p
+let @p="Oimport ipdb; ipdb.set_trace()"

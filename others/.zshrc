@@ -178,6 +178,24 @@ log () {
  # rm -rf delete
 }
 
+#connect gcp
+function conn () {
+  HOST=$1 
+  gcloud compute --project "maga-bigdata" ssh --zone="us-east1-b" \
+                                              --ssh-flag="-D" \
+                                              --ssh-flag="10000" \
+                                              --ssh-flag="-N" \
+                                              ${HOST} &
+  PID=$!
+  sleep 1
+  google-chrome "http://"${HOST}":80" \
+                --proxy-server="socks5://localhost:10000" \
+                --host-resolver-rules="MAP * 0.0.0.0 , EXCLUDE localhost" \
+                --user-data-dir=/tmp/ 2> /dev/null
+  kill -INT $PID
+  sleep 0.1
+}
+
 [[ -s "/home/bruno/.gvm/scripts/gvm" ]] && source "/home/bruno/.gvm/scripts/gvm"
 
 alias -g 'serveralias=serveralias -t zsh'
