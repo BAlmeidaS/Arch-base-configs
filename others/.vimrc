@@ -115,3 +115,4 @@ map <F2> :Explore<CR>
 
 "debugger python on macro -> p
 let @p="Oimport ipdb; ipdb.set_trace()"
+let @r="Orequire 'pry'; binding.pry"
