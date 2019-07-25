@@ -133,12 +133,6 @@ export TF_VAR_role_arn=$ASSUME_ROLE
 #tfenv
 export PATH="$HOME/.tfenv/bin:$PATH"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/bruno/.google-cloud-sdk/path.zsh.inc' ]; then . '/home/bruno/.google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/bruno/.google-cloud-sdk/completion.zsh.inc' ]; then . '/home/bruno/.google-cloud-sdk/completion.zsh.inc'; fi
-
 #terraform gcloud credetials
 #export GOOGLE_CREDENTIALS='/home/bruno/projetos/luizalabs/maga-bigdata-8054a973e6cd.json'
 export GOOGLE_CREDENTIALS='$HOME/.config/gcloud/application_default_credentials.json'
@@ -201,3 +195,12 @@ alias -g 'serveralias=serveralias -t zsh'
 alias alt='update-alternatives'
 
 alias haro='haroopad'
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/bruno/.google-cloud-sdk/path.zsh.inc' ]; then . '/home/bruno/.google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/bruno/.google-cloud-sdk/completion.zsh.inc' ]; then . '/home/bruno/.google-cloud-sdk/completion.zsh.inc'; fi
