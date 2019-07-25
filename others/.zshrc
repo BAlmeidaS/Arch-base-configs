@@ -93,9 +93,8 @@ export PATH=$HOME/Library/Python/3.7/bin:$PATH
 
 #virtualenv and virtualenvwrapper
 export WORKON_HOME=~/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-source $HOME/.local/bin/virtualenvwrapper.sh
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+source $HOME/.local/bin/virtualenvwrapper.sh
 #source $HOME/Library/Python/3.7/bin/virtualenvwrapper.sh
 
 #rbenv path
