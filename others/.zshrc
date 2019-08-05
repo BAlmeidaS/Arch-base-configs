@@ -144,7 +144,7 @@ alias tf='terraform'
 alias files='nautilus'
 
 #alias teresa configs
-alias old-production='teresa config use-cluster gcp-production'
+alias old-production='teresa config use-cluster gcp-production-old'
 alias old-staging='teresa config use-cluster gcp-staging'
 alias production='teresa config use-cluster regional-production'
 alias staging='teresa config use-cluster regional-staging'
@@ -180,13 +180,13 @@ function conn () {
                                               --ssh-flag="-N" \
                                               ${HOST} &
   PID=$!
-  sleep 1
+  sleep 1.5
   google-chrome "http://"${HOST}":80" \
                 --proxy-server="socks5://localhost:10000" \
                 --host-resolver-rules="MAP * 0.0.0.0 , EXCLUDE localhost" \
                 --user-data-dir=/tmp/ 2> /dev/null
   kill -INT $PID
-  sleep 0.1
+  sleep 1
 }
 
 [[ -s "/home/bruno/.gvm/scripts/gvm" ]] && source "/home/bruno/.gvm/scripts/gvm"
@@ -204,3 +204,4 @@ if [ -f '/home/bruno/.google-cloud-sdk/path.zsh.inc' ]; then . '/home/bruno/.goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/bruno/.google-cloud-sdk/completion.zsh.inc' ]; then . '/home/bruno/.google-cloud-sdk/completion.zsh.inc'; fi
+alias octave='flatpak run org.octave.Octave'
