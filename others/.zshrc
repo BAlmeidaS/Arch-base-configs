@@ -205,4 +205,13 @@ if [ -f '/home/bruno/.google-cloud-sdk/path.zsh.inc' ]; then . '/home/bruno/.goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/bruno/.google-cloud-sdk/completion.zsh.inc' ]; then . '/home/bruno/.google-cloud-sdk/completion.zsh.inc'; fi
+
 alias octave='flatpak run org.octave.Octave'
+
+# CUDA
+export PATH=/usr/local/cuda-10.1/bin:/usr/local/cuda-10.1/NsightCompute-2019.3/:$PATH
+
+export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
