@@ -110,6 +110,7 @@ export GOROOT_BOOTSTRAP=$HOME/.gvm/gos/go1.4
 #gopath
 #export PATH=$PATH:$(go env GOPATH)/bin
 #export GOPATH=$(go env GOPATH)
+export PATH=$PATH:/usr/local/go/bin
 
 #keys gn
 export BUNDLE_GITHUB__COM=2c8e6f7c0934d3bd8a884b276a0e776101c0ff3e:x-oauth-basic
