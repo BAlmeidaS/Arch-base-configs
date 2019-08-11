@@ -125,14 +125,8 @@ export BUNDLE_GITHUB__COM=2c8e6f7c0934d3bd8a884b276a0e776101c0ff3e:x-oauth-basic
 #alias for xclip
 alias xc='xclip -sel clip'
 
-export ASSUME_ROLE="arn:aws:iam::590284024382:role/iam-devops-access-production-role"
-export TF_VAR_role_arn=$ASSUME_ROLE
-
-#adding auxilir file
-[[ -f ~/.zshrc_aux ]] && . ~/.zshrc_aux
-
 #tfenv
-export PATH="$HOME/.tfenv/bin:$PATH"
+# export PATH="$HOME/.tfenv/bin:$PATH"
 
 #terraform gcloud credetials
 #export GOOGLE_CREDENTIALS='/home/bruno/projetos/luizalabs/maga-bigdata-8054a973e6cd.json'
@@ -211,7 +205,6 @@ alias octave='flatpak run org.octave.Octave'
 # CUDA
 export PATH=/usr/local/cuda-10.1/bin:/usr/local/cuda-10.1/NsightCompute-2019.3/:$PATH
 
-export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64\
-                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
