@@ -200,6 +200,8 @@ if [ -f '/home/bruno/.google-cloud-sdk/path.zsh.inc' ]; then . '/home/bruno/.goo
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/bruno/.google-cloud-sdk/completion.zsh.inc' ]; then . '/home/bruno/.google-cloud-sdk/completion.zsh.inc'; fi
 
+alias trash-restore=restore-trash
+
 alias octave='flatpak run org.octave.Octave'
 
 # CUDA
