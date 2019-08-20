@@ -214,3 +214,6 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 
 #mujoco
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/bruno/.mujoco/mujoco200/bin
+
+#change ll
+alias ll='ls -lah'
