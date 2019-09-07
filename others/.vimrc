@@ -18,14 +18,15 @@ vnoremap // y/<C-R>"<CR>
 """""""" NEERDTREE """"""""
 "Show Hidden Files
 let NERDTreeShowHidden=1
-"Open on start
-autocmd VimEnter * NERDTree
-"Move cursor to the file opened
-autocmd VimEnter * wincmd p
+""Open on start
+"autocmd VimEnter * NERDTree
+""Move cursor to the file opened
+"autocmd VimEnter * wincmd p
 "ignoring pyc, swp files
 let NERDTreeIgnore = ['\.pyc$', '\.sw[^\.]*', '\.git$[[dir]]', '.ipynb_checkpoints$[[dir]]', '__pycache__[[dir]]' ]
 "size
-let g:NERDTreeWinSize=60
+"let g:NERDTreeWinSize=60
+"let NERDTreeHijackNetrw=1
 
 """ HIGHLIGHT SEARCH PATTERN """
 :set hlsearch
@@ -116,3 +117,11 @@ map <F2> :Explore<CR>
 "debugger python on macro -> p
 let @p="Oimport ipdb; ipdb.set_trace()"
 let @r="Orequire 'pry'; binding.pry"
+
+"setting netrw
+augroup ProjectDrawer
+    autocmd!
+    autocmd VimEnter * if argc() == 0 | Explore! | endif
+augroup END
+
+let g:netrw_list_hide= 'ipynb_checkpoints,pycache'
