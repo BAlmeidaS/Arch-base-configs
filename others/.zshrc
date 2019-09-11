@@ -213,7 +213,10 @@ export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 
 #mujoco
-LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/bruno/.mujoco/mujoco200/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/bruno/.mujoco/mujoco200/bin
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
+
 
 #change ll
 alias ll='ls -lah'
+
