@@ -1,1 +1,4 @@
 *.sqlite
+
+dot-jupyter/lab/workspaces/*
+!dot-jupyter/lab/workspaces/.keep
