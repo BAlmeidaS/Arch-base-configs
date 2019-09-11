@@ -1,0 +1,26 @@
+{
+  "load_extensions": {
+    "nbextensions_configurator/config_menu/main": true,
+    "contrib_nbextensions_help_item/main": true,
+    "codefolding/main": true,
+    "hinterland/hinterland": false,
+    "freeze/main": true,
+    "runtools/main": true,
+    "collapsible_headings/main": true,
+    "splitcell/splitcell": true,
+    "toc2/main": true
+  },
+  "hinterland": {
+    "hint_delay": "400"
+  },
+  "Freeze": {
+    "frozen_color": "#ffdddf"
+  },
+  "keys": {
+    "command": {
+      "bind": {
+        "alt-b": "jupyter-notebook:run-all-cells-below"
+      }
+    }
+  }
+}
