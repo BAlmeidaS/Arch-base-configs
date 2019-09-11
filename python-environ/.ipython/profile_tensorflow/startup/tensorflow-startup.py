@@ -1,0 +1,8 @@
+try:
+    import tensorflow as tf
+
+    config = tf.ConfigProto()
+    config.gpu_options.allow_growth = True
+    sess = tf.Session(config=config)
+except ImportError:
+    pass
