@@ -1,1 +1,2 @@
 *.sqlite
+dot-jupyter/lab/workspaces/*
