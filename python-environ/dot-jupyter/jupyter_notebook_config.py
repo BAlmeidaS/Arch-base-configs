@@ -765,5 +765,5 @@
 #c.KernelSpecManager.whitelist = set()
 
 c.NotebookApp.token = u''
-c.NotebookApp.open_browser = False
 c.Spawner.default_url = '/lab'
+c.NotebookApp.browser = '/usr/bin/google-chrome'
