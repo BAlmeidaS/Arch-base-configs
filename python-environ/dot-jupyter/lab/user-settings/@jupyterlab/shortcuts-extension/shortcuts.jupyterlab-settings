@@ -83,6 +83,14 @@
     // List of Keyboard Shortcuts
     "shortcuts": [
         {
+            "command": "runmenu:restart-and-run-all",
+            "keys": [
+                "9",
+                "9"
+            ],
+            "selector": "body"
+        },
+        {
             "command": "application:activate-next-tab",
             "keys": [
                 "F2"
