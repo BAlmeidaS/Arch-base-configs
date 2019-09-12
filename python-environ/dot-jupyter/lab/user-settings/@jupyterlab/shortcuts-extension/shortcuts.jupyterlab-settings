@@ -88,7 +88,7 @@
                 "9",
                 "9"
             ],
-            "selector": "body"
+            "selector": ".jp-Notebook:focus"
         },
         {
             "command": "application:activate-next-tab",
