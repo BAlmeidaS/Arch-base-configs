@@ -91,6 +91,14 @@
             "selector": ".jp-Notebook:focus"
         },
         {
+            "command": "kernelmenu:restart-and-clear",
+            "keys": [
+                "7",
+                "7"
+            ],
+            "selector": ".jp-Notebook:focus"
+        },
+        {
             "command": "application:activate-next-tab",
             "keys": [
                 "F2"

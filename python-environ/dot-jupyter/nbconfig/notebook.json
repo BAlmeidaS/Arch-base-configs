@@ -8,7 +8,8 @@
     "runtools/main": true,
     "collapsible_headings/main": true,
     "splitcell/splitcell": true,
-    "toc2/main": true
+    "toc2/main": true,
+    "spellchecker/main": true
   },
   "hinterland": {
     "hint_delay": "400"
