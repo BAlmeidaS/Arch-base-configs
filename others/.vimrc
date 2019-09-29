@@ -68,6 +68,10 @@ Plugin 'python-mode/python-mode'
 "docker-syntax
 Plugin 'ekalinin/Dockerfile.vim'
 
+"markdonw
+"TODO: npm install -g livedown
+Plugin 'shime/vim-livedown'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
