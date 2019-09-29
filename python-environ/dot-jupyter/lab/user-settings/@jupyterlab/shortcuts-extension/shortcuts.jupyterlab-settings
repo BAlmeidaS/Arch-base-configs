@@ -99,6 +99,22 @@
             "selector": ".jp-Notebook:focus"
         },
         {
+            "command": "notebook:run-all-above",
+            "keys": [
+                "8",
+                "8"
+            ],
+            "selector": ".jp-Notebook:focus"
+        },
+        {
+            "command": "notebook:run-all-below",
+            "keys": [
+                "2",
+                "2"
+            ],
+            "selector": ".jp-Notebook:focus"
+        },
+        {
             "command": "application:activate-next-tab",
             "keys": [
                 "F2"

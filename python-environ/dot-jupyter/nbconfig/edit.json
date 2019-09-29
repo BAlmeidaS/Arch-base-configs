@@ -3,5 +3,8 @@
     "file_extension_modes": {
       ".py": "Python"
     }
+  },
+  "load_extensions": {
+    "codefolding/edit": true
   }
 }
