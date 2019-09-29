@@ -124,4 +124,4 @@ augroup ProjectDrawer
     autocmd VimEnter * if argc() == 0 | Explore! | endif
 augroup END
 
-let g:netrw_list_hide= 'ipynb_checkpoints,pycache'
+let g:netrw_list_hide= 'ipynb_checkpoints,pycache,.*\.sw.$'
