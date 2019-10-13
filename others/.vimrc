@@ -144,3 +144,8 @@ let g:livedown_open = 1
 let g:livedown_port = 9123
 " the browser to use, can also be firefox, chrome or other, depending on your executable
 let g:livedown_browser = "firefox"
+
+"################
+"pydocstring
+"################
+nmap <silent> <C-_> <Plug>(pydocstring)
