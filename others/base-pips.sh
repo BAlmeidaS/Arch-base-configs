@@ -9,3 +9,4 @@ python3 get-pip.py --user
 rm get-pip.py
 
 pip install virtualenvwrapper --user
+pip install ipython --user
