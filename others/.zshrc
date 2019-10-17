@@ -216,6 +216,8 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/bruno/.mujoco/mujoco200/bin
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
 
+#addin tensorrt
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.TensorRT-6.0.1.5
 
 #change ll
 alias ll='ls -lah'
