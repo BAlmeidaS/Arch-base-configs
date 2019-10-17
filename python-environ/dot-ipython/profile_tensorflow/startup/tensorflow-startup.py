@@ -1,8 +1,9 @@
 try:
     import tensorflow as tf
 
-    config = tf.ConfigProto()
-    config.gpu_options.allow_growth = True
-    sess = tf.Session(config=config)
+    gpus = tf.config.experimental.list_physical_devices('GPU')
+    if gpus:
+        for gpu in gpus:
+            tf.config.experimental.set_memory_growth(gpu, True)
 except ImportError:
     pass
