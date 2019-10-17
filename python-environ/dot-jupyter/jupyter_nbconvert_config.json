@@ -3,7 +3,8 @@
   "Exporter": {
     "template_path": [
       ".",
-      "/home/bruno/.virtualenvs/ml/local/lib/python3.7/site-packages/jupyter_contrib_nbextensions/templates"
+      "/home/bruno/.virtualenvs/ml/local/lib/python3.7/site-packages/jupyter_contrib_nbextensions/templates",
+      "/home/bruno/.virtualenvs/ml/lib/python3.7/site-packages/jupyter_contrib_nbextensions/templates"
     ],
     "preprocessors": [
       "jupyter_contrib_nbextensions.nbconvert_support.CodeFoldingPreprocessor",
