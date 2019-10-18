@@ -23,7 +23,8 @@
     "command": {
       "bind": {
         "alt-b": "jupyter-notebook:run-all-cells-below",
-        "0,0": "jupyter-notebook:restart-kernel-and-clear-output"
+        "0,0": "jupyter-notebook:restart-kernel-and-clear-output",
+        "9,9": "jupyter-notebook:restart-kernel-and-run-all-cells"
       },
       "unbind": [
         "0,0"
