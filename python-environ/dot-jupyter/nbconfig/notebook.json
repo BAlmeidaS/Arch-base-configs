@@ -10,7 +10,8 @@
     "splitcell/splitcell": true,
     "toc2/main": false,
     "spellchecker/main": true,
-    "toc": false
+    "toc": false,
+    "code_prettify/autopep8": true
   },
   "hinterland": {
     "hint_delay": "400"
@@ -27,6 +28,11 @@
       "unbind": [
         "0,0"
       ]
+    }
+  },
+  "autopep8": {
+    "hotkeys": {
+      "process_selected": "shift-p"
     }
   }
 }
