@@ -78,6 +78,8 @@ Plugin 'BAlmeidaS/vim-pydocstring'
 "fastfold
 Plugin 'Konfekt/FastFold'
 
+"simplyfold
+Plugin 'tmhedberg/SimpylFold'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -118,8 +120,13 @@ let $BASH_ENV = "~/.bash_aliases"
 
 let g:pymode_lint_ignore = ["E501"]
 
-"fold by indent:
-setlocal foldmethod=indent
+"options simpylfold
+let g:SimpylFold_docstring_preview = 0
+let g:SimpylFold_fold_docstring = 0
+let g:SimpylFold_fold_import = 0
+
+nnoremap <space> za
+vnoremap <space> zf
 
 "adding hotkey to explore
 map <F2> :Explore<CR>
