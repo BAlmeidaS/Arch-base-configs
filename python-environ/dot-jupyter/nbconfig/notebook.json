@@ -21,8 +21,12 @@
   "keys": {
     "command": {
       "bind": {
-        "alt-b": "jupyter-notebook:run-all-cells-below"
-      }
+        "alt-b": "jupyter-notebook:run-all-cells-below",
+        "0,0": "jupyter-notebook:restart-kernel-and-clear-output"
+      },
+      "unbind": [
+        "0,0"
+      ]
     }
   }
 }
