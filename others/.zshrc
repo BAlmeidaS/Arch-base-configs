@@ -224,3 +224,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/x86_64-linux-gnu
 
 #change ll
 alias ll='ls -lah'
+
+#alias jupyter
+alias jn='jupyter notebook'
+alias jc='jupyter console --existing'
