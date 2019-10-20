@@ -11,7 +11,8 @@
     "toc2/main": false,
     "spellchecker/main": true,
     "toc": false,
-    "code_prettify/autopep8": true
+    "code_prettify/autopep8": true,
+    "jupyter_boilerplate/main": true
   },
   "hinterland": {
     "hint_delay": "400"
@@ -33,7 +34,7 @@
   },
   "autopep8": {
     "hotkeys": {
-      "process_selected": "shift-p"
+      "process_selected": ""
     }
   }
 }
