@@ -228,3 +228,6 @@ alias ll='ls -lah'
 #alias jupyter
 alias jn='jupyter notebook'
 alias jc='jupyter console --existing'
+
+#workon
+alias w='workon'
