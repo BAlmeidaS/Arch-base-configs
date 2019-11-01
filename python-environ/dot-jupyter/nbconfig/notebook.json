@@ -8,7 +8,7 @@
     "runtools/main": true,
     "collapsible_headings/main": true,
     "splitcell/splitcell": true,
-    "toc2/main": false,
+    "toc2/main": true,
     "spellchecker/main": true,
     "toc": false,
     "code_prettify/autopep8": true,
