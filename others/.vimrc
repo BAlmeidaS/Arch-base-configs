@@ -7,6 +7,7 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
+
 """"" SYNTAX HIGHLIGHT """""
 filetype plugin on
 syntax on
@@ -77,6 +78,9 @@ Plugin 'BAlmeidaS/vim-pydocstring'
 
 "fastfold
 Plugin 'Konfekt/FastFold'
+
+"fastfold
+Plugin 'chrisbra/Colorizer'
 
 "simplyfold
 Plugin 'tmhedberg/SimpylFold'
@@ -159,3 +163,5 @@ let g:livedown_browser = "firefox"
 "pydocstring
 "################
 nmap <silent> <C-_> <Plug>(pydocstring)i
+
+let g:colorizer_auto_color = 1

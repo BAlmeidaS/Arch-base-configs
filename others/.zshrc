@@ -235,3 +235,19 @@ alias jc='jupyter console --existing'
 
 #workon
 alias w='workon'
+
+#java
+#export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+#export PATH=$JAVA_HOME/bin:$PATH
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/bruno/.sdkman"
+[[ -s "/home/bruno/.sdkman/bin/sdkman-init.sh" ]] && source "/home/bruno/.sdkman/bin/sdkman-init.sh"
+
+alias kctl="kubectl --insecure-skip-tls-verify"
