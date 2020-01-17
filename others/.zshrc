@@ -110,7 +110,7 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 export AWS_REGION=us-east-1
 
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-export GOROOT_BOOTSTRAP=$HOME/.gvm/gos/go1.4
+#export GOROOT_BOOTSTRAP=$HOME/.gvm/gos/go1.4
 
 #gopath
 #export PATH=$PATH:$(go env GOPATH)/bin
