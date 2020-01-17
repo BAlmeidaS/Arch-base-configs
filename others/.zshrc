@@ -117,9 +117,6 @@ export AWS_REGION=us-east-1
 #export GOPATH=$(go env GOPATH)
 export PATH=$PATH:/usr/local/go/bin
 
-#keys gn
-export BUNDLE_GITHUB__COM=2c8e6f7c0934d3bd8a884b276a0e776101c0ff3e:x-oauth-basic
-
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
 [[ -f /home/bruno/getninjas/aws-scripts/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/bruno/getninjas/aws-scripts/node_modules/tabtab/.completions/serverless.zsh
@@ -153,51 +150,11 @@ alias staging='teresa config use-cluster regional-staging'
 export SDKMAN_DIR="/home/bruno/.sdkman"
 [[ -s "/home/bruno/.sdkman/bin/sdkman-init.sh" ]] && source "/home/bruno/.sdkman/bin/sdkman-init.sh"
 
-#airflow
-export AIRFLOW_HOME=$HOME/.airflow-local
-
-#logs Airflow
-log () {
-  rm -rf delete
-  mkdir delete
-  cd delete
-  gsutil cp -r $(echo $(expr $1 : '^\(.*\)\/driveroutput$')) .
-  cd $(ls)
-  echo "\n#######################################################"
-  echo "######################### LOG #########################"
-  echo "#######################################################\n"
- # cat driveroutput.000000000
- # cd ../..
- # rm -rf delete
-}
-
-#connect gcp
-function conn () {
-  HOST=$1 
-  gcloud compute --project "maga-bigdata" ssh --zone="us-east1-b" \
-                                              --ssh-flag="-D" \
-                                              --ssh-flag="10000" \
-                                              --ssh-flag="-N" \
-                                              ${HOST} &
-  PID=$!
-  sleep 1.5
-  google-chrome "http://"${HOST}":80" \
-                --proxy-server="socks5://localhost:10000" \
-                --host-resolver-rules="MAP * 0.0.0.0 , EXCLUDE localhost" \
-                --user-data-dir=/tmp/ 2> /dev/null
-  kill -INT $PID
-  sleep 1
-}
-
-[[ -s "/home/bruno/.gvm/scripts/gvm" ]] && source "/home/bruno/.gvm/scripts/gvm"
-
 alias -g 'serveralias=serveralias -t zsh'
 alias alt='update-alternatives'
 
-alias haro='haroopad'
-
 export VISUAL=vim
-export EDITOR="$VISUAL"
+export EDITOR=$VISUAL
 
 alias trash-restore=restore-trash
 
@@ -230,10 +187,7 @@ alias jc='jupyter console --existing'
 #workon
 alias w='workon'
 
-#java
-#export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
-#export PATH=$JAVA_HOME/bin:$PATH
-
+# pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
