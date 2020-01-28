@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -57,8 +57,6 @@ plugins=(
   zsh-autosuggestions
 )
 # plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -206,3 +204,6 @@ if [ -f '/home/bruno/.gcloud-cloud-sdk/path.zsh.inc' ]; then . '/home/bruno/.gcl
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/bruno/.gcloud-cloud-sdk/completion.zsh.inc' ]; then . '/home/bruno/.gcloud-cloud-sdk/completion.zsh.inc'; fi
 alias tm=trash
+
+# finally source zsh
+source $ZSH/oh-my-zsh.sh
