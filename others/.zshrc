@@ -207,3 +207,13 @@ alias tm=trash
 
 # finally source zsh
 source $ZSH/oh-my-zsh.sh
+
+#Pyenv and youcompleteme fix
+export PYTHON_CONFIGURE_OPTS="--enable-shared"
+
+#vim mode
+#bindkey -v
+
+#https://github.com/todotxt/todo.txt
+#https://github.com/todotxt/todo.txt-cli
+alias t='todo.sh'
