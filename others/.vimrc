@@ -165,3 +165,9 @@ let g:livedown_browser = "firefox"
 nmap <silent> <C-_> <Plug>(pydocstring)i
 
 let g:colorizer_auto_color = 1
+
+"########################
+"C++ configs Youcompleteme
+"https://www.ovenproof-linux.com/2018/03/installing-youcompleteme-for-c.html
+"########################
+let g:ycm_global_ycm_extra_conf = '$HOME/.vim/ycm_extra_conf/ycm_extra_conf.py'
