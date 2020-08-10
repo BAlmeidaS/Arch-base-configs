@@ -1,0 +1,2 @@
+x 2020-08-06 2020-08-06 read about embbedding python models in Elasticsearch
+x 2020-08-05 2020-08-05 fazer caffe

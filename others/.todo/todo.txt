@@ -1,0 +1,6 @@
+(B) 2020-08-06 study english
+(C) 2020-08-10 review MRs batalhão WAR @geoloc
+(D) 2020-08-10 change arcade to use new jupyter url @arcade
+(Z) 2020-08-06 read more about LR implemented in ranklib https://github.com/codelibs/ranklib/blob/master/src/main/java/ciir/umass/edu/learning/LinearRegRank.java
+(Z) 2020-08-10 read LTR paper
+(Z) 2020-08-10 bruno teste
