@@ -104,9 +104,6 @@ source $HOME/.local/bin/virtualenvwrapper.sh
 export PATH="$HOME/.rbenv/bin":$PATH
 export PATH="$HOME/.rbenv/shims:$PATH"
 
-#Terraform aws region
-export AWS_REGION=us-east-1
-
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 #export GOROOT_BOOTSTRAP=$HOME/.gvm/gos/go1.4
 
@@ -114,13 +111,6 @@ export AWS_REGION=us-east-1
 #export PATH=$PATH:$(go env GOPATH)/bin
 #export GOPATH=$(go env GOPATH)
 export PATH=$PATH:/usr/local/go/bin
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /home/bruno/getninjas/aws-scripts/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/bruno/getninjas/aws-scripts/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /home/bruno/getninjas/aws-scripts/node_modules/tabtab/.completions/sls.zsh ]] && . /home/bruno/getninjas/aws-scripts/node_modules/tabtab/.completions/sls.zsh
 
 #alias for xclip
 alias xc='xclip -sel clip'
@@ -130,19 +120,14 @@ alias xc='xclip -sel clip'
 
 #terraform gcloud credetials
 #export GOOGLE_CREDENTIALS='/home/bruno/projetos/luizalabs/maga-bigdata-8054a973e6cd.json'
-export GOOGLE_CREDENTIALS='$HOME/.config/gcloud/application_default_credentials.json'
+export GOOGLE_APPLICATION_CREDENTIALS='$HOME/.config/gcloud/application_default_credentials.json'
+export GOOGLE_CLOUD_PROJECT=maga-bigdata
 
 #terraform alias
 alias tf='terraform'
 
 #alias nautilus
 alias files='nautilus'
-
-#alias teresa configs
-alias old-production='teresa config use-cluster gcp-production-old'
-alias old-staging='teresa config use-cluster gcp-staging'
-alias production='teresa config use-cluster regional-production'
-alias staging='teresa config use-cluster regional-staging'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/bruno/.sdkman"
@@ -196,8 +181,6 @@ fi
 export SDKMAN_DIR="/home/bruno/.sdkman"
 [[ -s "/home/bruno/.sdkman/bin/sdkman-init.sh" ]] && source "/home/bruno/.sdkman/bin/sdkman-init.sh"
 
-alias kctl='kubectl --insecure-skip-tls-verify'
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/bruno/.gcloud-cloud-sdk/path.zsh.inc' ]; then . '/home/bruno/.gcloud-cloud-sdk/path.zsh.inc'; fi
 
@@ -216,4 +199,7 @@ export PYTHON_CONFIGURE_OPTS="--enable-shared"
 
 #https://github.com/todotxt/todo.txt
 #https://github.com/todotxt/todo.txt-cli
+#ADDONS https://github.com/todotxt/todo.txt-cli/wiki/Todo.sh-Add-on-Directory
 alias t='todo.sh'
+
+export PATH=$JAVA_HOME/bin:$PATH
