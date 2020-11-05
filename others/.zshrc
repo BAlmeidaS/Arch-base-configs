@@ -56,7 +56,6 @@ plugins=(
   kubectl
   zsh-autosuggestions
 )
-# plugins=(git)
 
 # User configuration
 
