@@ -203,3 +203,4 @@ export PYTHON_CONFIGURE_OPTS="--enable-shared"
 alias t='todo.sh'
 
 export PATH=$JAVA_HOME/bin:$PATH
+export PATH=$HOME/.zookeeper/bin:$PATH
