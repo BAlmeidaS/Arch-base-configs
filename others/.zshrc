@@ -93,12 +93,6 @@ export PATH=$HOME/bash-for-your-own-good:$PATH
 export PATH=~/.local/bin:$PATH
 export PATH=$HOME/Library/Python/3.7/bin:$PATH
 
-#virtualenv and virtualenvwrapper
-export WORKON_HOME=~/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-source $HOME/.local/bin/virtualenvwrapper.sh
-#source $HOME/Library/Python/3.7/bin/virtualenvwrapper.sh
-
 #rbenv path
 export PATH="$HOME/.rbenv/bin":$PATH
 export PATH="$HOME/.rbenv/shims:$PATH"
@@ -175,6 +169,13 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+#virtualenv and virtualenvwrapper
+export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+source $HOME/.local/bin/virtualenvwrapper.sh
+#source $HOME/Library/Python/3.7/bin/virtualenvwrapper.sh
+
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/bruno/.sdkman"
