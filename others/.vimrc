@@ -29,7 +29,7 @@ let NERDTreeIgnore = ['\.pyc$', '\.sw[^\.]*', '\.git$[[dir]]', '.ipynb_checkpoin
 let NERDTreeHijackNetrw=1
 
 """ HIGHLIGHT SEARCH PATTERN """
-:set hlsearch
+set hlsearch
 
 """""""""""""""""""""""""""""
 """""""""" VUNDLES """"""""""
@@ -94,8 +94,8 @@ filetype plugin indent on    " required
 """""""" VUNDLES END """"""""
 """""""""""""""""""""""""""""
 " turn hybrid line numbers on
-:set number relativenumber
-:set nu rnu
+set number relativenumber
+set nu rnu
 
 "set colorscheme
 colorscheme gruvbox
@@ -105,7 +105,7 @@ set background=dark
 let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 "line numbers
-:set number
+set number
 
 "tab size
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
