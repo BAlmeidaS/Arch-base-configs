@@ -93,7 +93,7 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""
 """""""" VUNDLES END """"""""
 """""""""""""""""""""""""""""
-" turn hybrid line numbers on
+"turn hybrid line numbers on
 set number relativenumber
 set nu rnu
 
