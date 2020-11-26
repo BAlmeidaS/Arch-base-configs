@@ -84,7 +84,7 @@ Plugin 'chrisbra/Colorizer'
 "simplyfold
 Plugin 'tmhedberg/SimpylFold'
 
-"hardmode
+"hardtime
 Plugin 'takac/vim-hardtime'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
