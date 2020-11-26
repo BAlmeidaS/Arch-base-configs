@@ -137,6 +137,8 @@ let g:SimpylFold_fold_import = 0
 nnoremap <space> za
 vnoremap <space> zf
 
+map <F12> :nohls<CR>
+
 "adding hotkey to explore
 map <F2> :Explore<CR>
 
