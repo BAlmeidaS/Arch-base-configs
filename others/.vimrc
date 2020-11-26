@@ -93,6 +93,9 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""
 """""""" VUNDLES END """"""""
 """""""""""""""""""""""""""""
+" turn hybrid line numbers on
+:set number relativenumber
+:set nu rnu
 
 "set colorscheme
 colorscheme gruvbox
