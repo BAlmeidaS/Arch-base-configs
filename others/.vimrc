@@ -1,6 +1,5 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -84,6 +83,9 @@ Plugin 'chrisbra/Colorizer'
 
 "simplyfold
 Plugin 'tmhedberg/SimpylFold'
+
+"hardmode
+Plugin 'takac/vim-hardtime'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -171,3 +173,14 @@ let g:colorizer_auto_color = 1
 "https://www.ovenproof-linux.com/2018/03/installing-youcompleteme-for-c.html
 "########################
 let g:ycm_global_ycm_extra_conf = '$HOME/.vim/ycm_extra_conf/ycm_extra_conf.py'
+
+"########
+"HARDTIME
+"########
+let g:hardtime_default_on = 1
+let g:hardtime_maxcount = 2
+let g:hardtime_showmsg = 1
+let g:list_of_normal_keys = ["h", "j", "k", "l", "-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_visual_keys = ["h", "j", "k", "l", "-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_insert_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
