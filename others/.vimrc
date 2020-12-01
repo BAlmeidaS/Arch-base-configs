@@ -97,6 +97,9 @@ filetype plugin indent on    " required
 set number relativenumber
 set nu rnu
 
+"scrolloff
+set scrolloff=15
+
 "set colorscheme
 colorscheme gruvbox
 set background=dark
