@@ -149,14 +149,16 @@ let g:pymode_lint_ignore = ["E501"]
 let g:SimpylFold_docstring_preview = 0
 let g:SimpylFold_fold_docstring = 0
 let g:SimpylFold_fold_import = 0
+setlocal foldmethod=syntax
 
 nnoremap <space> za
 vnoremap <space> zf
+nnoremap <F2> zM
 
 map <F12> :nohls<CR>
 
 "adding hotkey to explore
-map <F2> :Explore<CR>
+map <F9> :Explore<CR>
 
 "debugger python on macro -> p
 let @p="Oimport ipdb; ipdb.set_trace()"
