@@ -139,7 +139,7 @@ alias octave='flatpak run org.octave.Octave'
 # CUDA
 export PATH=/usr/local/cuda-10.1/bin:/usr/local/cuda-10.1/NsightCompute-2019.3/:$PATH
 
-export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 
