@@ -97,13 +97,13 @@ export PATH=$HOME/Library/Python/3.7/bin:$PATH
 export PATH="$HOME/.rbenv/bin":$PATH
 export PATH="$HOME/.rbenv/shims:$PATH"
 
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+# [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 #export GOROOT_BOOTSTRAP=$HOME/.gvm/gos/go1.4
 
 #gopath
 #export PATH=$PATH:$(go env GOPATH)/bin
 #export GOPATH=$(go env GOPATH)
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/.golang/bin
 
 #alias for xclip
 alias xc='xclip -sel clip'
