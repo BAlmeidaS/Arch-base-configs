@@ -42,7 +42,7 @@ ZSH_THEME="steeef"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="dd.mm.yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -94,8 +94,8 @@ export PATH=~/.local/bin:$PATH
 export PATH=$HOME/Library/Python/3.7/bin:$PATH
 
 #rbenv path
-export PATH="$HOME/.rbenv/bin":$PATH
-export PATH="$HOME/.rbenv/shims:$PATH"
+#export PATH="$HOME/.rbenv/bin":$PATH
+#export PATH="$HOME/.rbenv/shims:$PATH"
 
 # [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 #export GOROOT_BOOTSTRAP=$HOME/.gvm/gos/go1.4
@@ -113,7 +113,7 @@ alias xc='xclip -sel clip'
 
 #terraform gcloud credetials
 #export GOOGLE_CREDENTIALS='/home/bruno/projetos/luizalabs/maga-bigdata-8054a973e6cd.json'
-export GOOGLE_APPLICATION_CREDENTIALS='$HOME/.config/gcloud/application_default_credentials.json'
+export GOOGLE_APPLICATION_CREDENTIALS='/home/bruno/.config/gcloud/application_default_credentials.json'
 export GOOGLE_CLOUD_PROJECT=maga-bigdata
 
 #terraform alias
@@ -137,9 +137,9 @@ alias trash-restore=restore-trash
 alias octave='flatpak run org.octave.Octave'
 
 # CUDA
-export PATH=/usr/local/cuda-10.1/bin:/usr/local/cuda-10.1/NsightCompute-2019.3/:$PATH
+export PATH=/usr/local/cuda/bin:/usr/local/cuda-10.1/NsightCompute-2019.3/:$PATH
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 
@@ -165,10 +165,11 @@ alias w='workon'
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
 
 #virtualenv and virtualenvwrapper
 export WORKON_HOME=~/.virtualenvs
@@ -204,3 +205,6 @@ alias t='todo.sh'
 
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH=$HOME/.zookeeper/bin:$PATH
+
+#direnv
+eval "$(direnv hook zsh)"

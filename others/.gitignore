@@ -18,3 +18,4 @@ path/
 .ipynb_checkpoints
 
 __pycache__
+.session*

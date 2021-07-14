@@ -23,7 +23,7 @@ autocmd VimEnter * NERDTree
 "Move cursor to the file opened
 autocmd VimEnter * wincmd p
 "ignoring pyc, swp files
-let NERDTreeIgnore = ['\.pyc$', '\.sw[^\.]*', '\.git$[[dir]]', '.ipynb_checkpoints$[[dir]]', '__pycache__[[dir]]' ]
+let NERDTreeIgnore = ['\.pyc$', '.sw[^\.]*', '\.git$[[dir]]', '.ipynb_checkpoints$[[dir]]', '__pycache__[[dir]]' ]
 "size
 "let g:NERDTreeWinSize=60
 let NERDTreeHijackNetrw=1
@@ -86,6 +86,9 @@ Plugin 'tmhedberg/SimpylFold'
 
 "hardtime
 Plugin 'takac/vim-hardtime'
+
+"autosave
+Plugin '907th/vim-auto-save'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -210,3 +213,10 @@ let g:list_of_insert_keys = []
 " let g:list_of_visual_keys = ["h", "j", "k", "l", "-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 " let g:list_of_insert_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 " let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+
+"#####
+"auto save
+"https://github.com/907th/vim-auto-save
+let g:auto_save = 1
+"change python mode to max column of 120
+let g:pymode_options_max_line_length=88
